@@ -2,19 +2,16 @@ import streamlit as st
 import folium
 from streamlit_folium import st_folium
 import requests
-import time
 
 # =========================
 # API KEY
 # =========================
-API_KEY = "a72e4993a2ea4af17fa7b2d7d89bcb98"
 API_KEY = st.secrets["API_KEY"]
-# =========================
-# AUTO REFRESH EVERY 10 SEC
-# =========================
+
 st.set_page_config(page_title="India Weather Dashboard", layout="wide")
 
 st.title("🌦 India State Capitals Live Weather")
+
 if st.button("🔄 Refresh Weather"):
     st.rerun()
 
