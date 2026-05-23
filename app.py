@@ -17,7 +17,6 @@ st.set_page_config(page_title="India Weather Dashboard", layout="wide")
 st.title("🌦 India State Capitals Live Weather")
 if st.button("🔄 Refresh Weather"):
     st.rerun()
-st.caption("🔄 Auto updates every 10 seconds")
 
 # =========================
 # STATE CAPITALS
