@@ -11,9 +11,8 @@ API_KEY = st.secrets["API_KEY"]
 st.set_page_config(page_title="India Weather Dashboard", layout="wide")
 
 st.title("🌦 India State Capitals Live Weather")
-
-if st.button("🔄 Refresh Weather"):
-    st.rerun()
+st.button("🔄 Refresh Weather"):
+    
 
 # =========================
 # STATE CAPITALS
