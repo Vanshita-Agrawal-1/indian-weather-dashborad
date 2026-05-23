@@ -132,5 +132,5 @@ st_folium(m, width=1400, height=700)
 # =========================
 # AUTO REFRESH
 # =========================
-time.sleep(10)
+time.sleep(120)
 st.rerun()
