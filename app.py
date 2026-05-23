@@ -15,7 +15,8 @@ API_KEY = st.secrets["API_KEY"]
 st.set_page_config(page_title="India Weather Dashboard", layout="wide")
 
 st.title("🌦 India State Capitals Live Weather")
-
+if st.button("🔄 Refresh Weather"):
+    st.rerun()
 st.caption("🔄 Auto updates every 10 seconds")
 
 # =========================
@@ -128,9 +129,3 @@ for city, coords in cities.items():
 # SHOW MAP
 # =========================
 st_folium(m, width=1400, height=700)
-
-# =========================
-# AUTO REFRESH
-# =========================
-time.sleep(120)
-st.rerun()
